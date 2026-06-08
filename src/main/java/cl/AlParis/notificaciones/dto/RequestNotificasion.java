@@ -1,7 +1,6 @@
 package cl.AlParis.notificaciones.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 
 public record RequestNotificasion(  
@@ -9,8 +8,8 @@ public record RequestNotificasion(
     @NotBlank(message = "El ID del pedido es obligatorio")
     String pedidoId,
 
-    @NotNull(message = "El ID del cliente es obligatorio")
-    Long clienteId,
+    @NotBlank(message = "El ID del cliente es obligatorio") 
+    String clienteId,
 
     @NotBlank(message = "El destinatario es obligatorio")
     String destinatario,
