@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.media.ExampleObject;
 
 @Tag(name = "Notificaciones")
 @RestController
-@RequestMapping("/api/notificaciones")
+@RequestMapping("/api/v1/notificaciones")
 public class ControllerNotificasion {
 
     private final ServiceNotificasion service;
